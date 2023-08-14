@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "curso4"
+    }
+  },
+  "defaultProject": "curso4",
+  "cli": {
+    "analytics": "4be79b68-6580-4acb-91d1-a648389ce4f8"
+  }
 }

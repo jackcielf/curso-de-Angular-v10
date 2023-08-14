@@ -1,0 +1,48 @@
+<h1>Aula sobre Class e Style Binding</h1>
+
+<select #classe (change)="(0)">
+  <option value="alert-success">Sucesso</option>
+  <option value="alert-info">Info</option>
+  <option value="alert-warning">Alerta</option>
+  <option value="alert-danger">Erro</option>
+</select>
+
+<div class="alert {{ classe.value }}" role="alert">ComboBox</div>
+
+<div
+  class="alert"
+  role="alert"
+  [class.alert-success]="classe.value == 'alert-success'"
+>
+  Sucesso
+</div>
+<div
+  class="alert"
+  role="alert"
+  [class.alert-info]="classe.value == 'alert-info'"
+>
+  Info
+</div>
+<div
+  class="alert"
+  role="alert"
+  [class.alert-warning]="classe.value == 'alert-warning'"
+>
+  Warning
+</div>
+<div
+  class="alert"
+  role="alert"
+  [class.alert-danger]="classe.value == 'alert-danger'"
+>
+  Danger
+</div>
+
+<!-- Style Binding -->
+<div
+  class="alert alert-danger"
+  role="alert"
+  [style.display]="classe.value == 'alert-danger' ? 'block' : 'none'"
+>
+  Este texto aparece em caso de erro
+</div>

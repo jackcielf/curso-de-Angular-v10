@@ -1,0 +1,33 @@
+<section class="event-binding">
+  <h1>Aula sobre Eventos</h1>
+  <article>
+    <button (click)="btnClicked()" class="btn btn-primary">Clique me</button>
+    <br /><br />
+    <input
+      type="text"
+      (keyup)="onKeyUp($event)"
+      (keyup.enter)="salvarValor($event.target.value)"
+      (blur)="salvarValor($event.target.value)"
+    />
+    <p>Valor atual: {{ valorAtual }}</p>
+    <p>Valor salvo: {{ valorSalvo }}</p>
+
+    <input
+      type="text"
+      (keyup)="onKeyUp($event)"
+      (keyup.enter)="salvarValor(campoValor.value)"
+      (blur)="salvarValor(campoValor.value)"
+      #campoValor
+    />
+    <p>Valor atual: {{ valorAtual }}</p>
+    <p>Valor salvo: {{ valorSalvo }}</p>
+
+    <p
+      (mouseover)="onMouseOverOut()"
+      (mouseout)="onMouseOverOut()"
+      [class.highlight]="isMouseOver"
+    >
+      Passe o mouse
+    </p>
+  </article>
+</section>
