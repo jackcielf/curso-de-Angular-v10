@@ -1,0 +1,12 @@
+<section>
+  <h1>Aula sobre Two Way Data Binding</h1>
+  <article>
+    <input type="text" [value]="nome" (input)="nome = $event.target.value" />
+    <input type="text" [ngModel]="nome" (ngModelChange)="nome = $event" />
+    <input type="text" [(ngModel)]="nome" />
+    <p>{{ nome }}</p>
+
+    <input type="text" [(ngModel)]="pessoa.nome" />
+    <input type="text" [(ngModel)]="pessoa.idade" />
+  </article>
+</section>
