@@ -9,6 +9,10 @@ import { DataBindingComponent } from './components/data-binding/data-binding.com
 import { StyleBindingComponent } from './components/style-binding/style-binding.component';
 import { EventsComponent } from './components/events/events.component';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
+import { FilhoComponent } from './components/input-properties/filho/filho.component';
+import { PaiComponent } from './components/input-properties/pai/pai.component';
+import { OutputPaiComponent } from './components/output-properties/output-pai/output-pai.component';
+import { OutputFilhoComponent } from './components/output-properties/output-filho/output-filho.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +22,10 @@ import { TwoWayBindingComponent } from './components/two-way-binding/two-way-bin
     StyleBindingComponent,
     EventsComponent,
     TwoWayBindingComponent,
+    FilhoComponent,
+    PaiComponent,
+    OutputPaiComponent,
+    OutputFilhoComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
