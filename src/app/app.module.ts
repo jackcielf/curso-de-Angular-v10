@@ -13,6 +13,8 @@ import { FilhoComponent } from './components/input-properties/filho/filho.compon
 import { PaiComponent } from './components/input-properties/pai/pai.component';
 import { OutputPaiComponent } from './components/output-properties/output-pai/output-pai.component';
 import { OutputFilhoComponent } from './components/output-properties/output-filho/output-filho.component';
+import { CycleComponent } from './components/cycle/cycle.component';
+import { InputDataComponent } from './components/input-data/input-data.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { OutputFilhoComponent } from './components/output-properties/output-filh
     PaiComponent,
     OutputPaiComponent,
     OutputFilhoComponent,
+    CycleComponent,
+    InputDataComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
