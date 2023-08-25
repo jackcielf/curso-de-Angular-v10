@@ -8,23 +8,23 @@ import { Component, OnInit } from '@angular/core';
 export class EventsComponent implements OnInit {
   valorAtual: any;
   valorSalvo: any;
-  isMouseOver: boolean = false;
+  isMouseOver = false;
 
-  btnClicked() {
+  btnClicked(): void {
     alert('Botão clicado!');
   }
 
-  onKeyUp(e: any) {
+  onKeyUp(e: any): void {
     // alert(e.target.value);
-    console.log((<HTMLInputElement>e.target).value);
-    this.valorAtual = (<HTMLInputElement>e.target).value;
+    console.log(e.target.value as HTMLInputElement);
+    this.valorAtual = e.target.value as HTMLInputElement;
   }
 
-  salvarValor(value: any) {
+  salvarValor(value: any): void {
     this.valorSalvo = value;
   }
 
-  onMouseOverOut() {
+  onMouseOverOut(): void {
     this.isMouseOver = !this.isMouseOver;
   }
 

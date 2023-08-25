@@ -8,13 +8,9 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 export class InputDataComponent implements OnInit {
   @ViewChild('campoInput') campoValorInput: ElementRef;
 
-  incrementa = () => {
-    this.campoValorInput.nativeElement.value++;
-  };
+  incrementa = () => this.campoValorInput.nativeElement.value++;
 
-  decrementa = () => {
-    this.campoValorInput.nativeElement.value--;
-  };
+  decrementa = () => this.campoValorInput.nativeElement.value--;
 
   constructor() {}
 

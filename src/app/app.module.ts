@@ -15,6 +15,7 @@ import { OutputPaiComponent } from './components/output-properties/output-pai/ou
 import { OutputFilhoComponent } from './components/output-properties/output-filho/output-filho.component';
 import { CycleComponent } from './components/cycle/cycle.component';
 import { InputDataComponent } from './components/input-data/input-data.component';
+import { LibrariesComponent } from './components/libraries/libraries.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { InputDataComponent } from './components/input-data/input-data.component
     OutputFilhoComponent,
     CycleComponent,
     InputDataComponent,
+    LibrariesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

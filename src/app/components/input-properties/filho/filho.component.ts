@@ -6,8 +6,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./filho.component.sass'],
 })
 export class FilhoComponent implements OnInit {
-  @Input('nome') nomeDoCurso: string = '';
-  @Input() professora: string = '';
+  @Input('nome') nomeDoCurso = '';
+  @Input() professora = '';
 
   constructor() {}
 

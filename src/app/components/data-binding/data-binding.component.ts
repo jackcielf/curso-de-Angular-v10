@@ -6,15 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./data-binding.component.sass'],
 })
 export class DataBindingComponent implements OnInit {
-  name: string = 'Jack';
-  cursoAngular: boolean = true;
-  urlImage: string = 'http://lorempixel.com.br/500/400/?1';
+  name = 'Jack';
+  cursoAngular = true;
+  urlImage = 'http://lorempixel.com.br/500/400/?1';
 
-  getValor() {
+  getValor(): number {
     return 1;
   }
 
-  getCurtirCurso() {
+  getCurtirCurso(): boolean {
     return true;
   }
 

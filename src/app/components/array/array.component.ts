@@ -6,9 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./array.component.sass'],
 })
 export class ArrayComponent implements OnInit {
-  curso: string = 'Angular v10';
+  curso = 'Angular v10';
 
-  cursos: Object[] = ['Java', 'Angular', 'JavaScript', 'HTML/CSS'];
+  cursos = ['Java', 'Angular', 'JavaScript', 'HTML/CSS'];
 
   constructor() {}
 

@@ -6,7 +6,7 @@ import { Component, Input, OnInit, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./output-filho.component.sass'],
 })
 export class OutputFilhoComponent implements OnInit {
-  @Input() valor: number = 0;
+  @Input() valor = 0;
   @Output() mudouValor = new EventEmitter();
 
   constructor() {}

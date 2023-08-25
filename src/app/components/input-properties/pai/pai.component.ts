@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pai.component.sass'],
 })
 export class PaiComponent implements OnInit {
-  nomeDoCurso: string = 'Angular';
-  professora: string = 'Loiane';
+  nomeDoCurso = 'Angular';
+  professora = 'Loiane';
 
   constructor() {}
 

@@ -1,58 +1,32 @@
-import {
-  AfterContentChecked,
-  AfterContentInit,
-  AfterViewChecked,
-  AfterViewInit,
-  Component,
-  DoCheck,
-  Input,
-  OnChanges,
-  OnDestroy,
-  OnInit,
-} from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-cycle',
   templateUrl: './cycle.component.html',
   styleUrls: ['./cycle.component.sass'],
 })
-export class CycleComponent
-  implements
-    OnChanges,
-    OnInit,
-    DoCheck,
-    AfterContentInit,
-    AfterContentChecked,
-    AfterViewInit,
-    AfterViewChecked,
-    OnDestroy
-{
-  @Input() valorInicial: number = 20;
+export class CycleComponent implements OnInit {
+  @Input() valorInicial = 20;
 
   log = (v: any) => console.log(v);
 
-
   constructor() {}
 
-  ngOnChanges() {
-    this.log('ngOnChanges');
-  }
-  ngOnInit() {
+  ngOnInit(): void {
     this.log('ngOnInit');
   }
-  ngDoCheck() {
-    this.log('ngOnChanges');
-  }
-  AfterContentInit() {
+  /*
+  AfterContentInit(): void {
     this.log('AfterContentInit');
   }
-  AfterContentChecked() {
+  AfterContentChecked(): void {
     this.log('AfterContentChecked');
   }
-  AfterViewInit() {
+  AfterViewInit(): void {
     this.log('AfterViewInit');
   }
-  OnDestroy() {
+  OnDestroy(): void {
     this.log('OnDestroy');
   }
+  */
 }

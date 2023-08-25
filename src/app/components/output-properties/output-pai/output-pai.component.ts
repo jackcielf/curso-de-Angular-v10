@@ -10,7 +10,7 @@ export class OutputPaiComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  onMudouValor(e) {
+  onMudouValor(e): any {
     console.log(e.novoValor);
   }
 }
