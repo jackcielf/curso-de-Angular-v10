@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
+// import { MaterializeModule } from 'angular2-materialize';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ArrayComponent } from './components/array/array.component';
@@ -16,6 +18,7 @@ import { OutputFilhoComponent } from './components/output-properties/output-filh
 import { CycleComponent } from './components/cycle/cycle.component';
 import { InputDataComponent } from './components/input-data/input-data.component';
 import { LibrariesComponent } from './components/libraries/libraries.component';
+import { DiretivesComponent } from './components/diretives/diretives.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +35,7 @@ import { LibrariesComponent } from './components/libraries/libraries.component';
     CycleComponent,
     InputDataComponent,
     LibrariesComponent,
+    DiretivesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
