@@ -10,6 +10,14 @@
         <button (click)="onMostrarCursos()">Clique Aqui</button>
     </article>
     <article>
+        <h2>*ngSwitch</h2>
+    </article>
+    <article>
         <h2>*ngFor</h2>
+        <ul>
+            <li *ngFor="let curso of cursos, let i = index">
+                {{i + 1}} - {{curso}}
+            </li>
+        </ul>
     </article>
 </section>

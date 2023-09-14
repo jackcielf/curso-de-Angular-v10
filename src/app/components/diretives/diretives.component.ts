@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./diretives.component.sass'],
 })
 export class DiretivesComponent implements OnInit {
-  cursos: string[] = ['Angular 10'];
+  cursos: string[] = ['Angular 10', 'Java', 'HTML', 'CSS'];
 
   mostrarCursos = false;
 
@@ -16,5 +16,10 @@ export class DiretivesComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    for (let i = 0; i < this.cursos.length; i++) {
+      const curso = this.cursos[i];
+      
+    }
+  }
 }
