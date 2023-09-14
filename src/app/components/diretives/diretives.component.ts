@@ -10,6 +10,9 @@ export class DiretivesComponent implements OnInit {
 
   mostrarCursos = false;
 
+  ativo: boolean = false;
+  tamanhoFonte: number = 10;
+
   onMostrarCursos() {
     this.mostrarCursos = !this.mostrarCursos;
   }
@@ -19,7 +22,10 @@ export class DiretivesComponent implements OnInit {
   ngOnInit(): void {
     for (let i = 0; i < this.cursos.length; i++) {
       const curso = this.cursos[i];
-      
     }
+  }
+
+  mudarAtivo() {
+    this.ativo = !this.ativo;
   }
 }

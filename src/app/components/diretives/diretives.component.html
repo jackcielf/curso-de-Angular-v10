@@ -1,23 +1,52 @@
 <section>
-    <h1>Aula sobre Diretivas</h1>
-    <article>
-        <h2>*ngIf</h2>
-        <div *ngIf="cursos.length > 0">Lista de cursos aqui.</div>
-        <div *ngIf="cursos.length === 0">Sem cursos para serem listados.</div>
-        <hr>
-        <div *ngIf="mostrarCursos === false">Sem cursos para serem listados.</div>
-        <div *ngIf="mostrarCursos === true">Lista de cursos aqui.</div>
-        <button (click)="onMostrarCursos()">Clique Aqui</button>
-    </article>
-    <article>
-        <h2>*ngSwitch</h2>
-    </article>
-    <article>
-        <h2>*ngFor</h2>
-        <ul>
-            <li *ngFor="let curso of cursos, let i = index">
-                {{i + 1}} - {{curso}}
-            </li>
-        </ul>
-    </article>
+  <h1>Aula sobre Diretivas</h1>
+  <article>
+    <h2>*ngIf</h2>
+    <div *ngIf="cursos.length > 0">Lista de cursos aqui.</div>
+    <div *ngIf="cursos.length === 0">Sem cursos para serem listados.</div>
+    <hr />
+    <div *ngIf="mostrarCursos === false">Sem cursos para serem listados.</div>
+    <div *ngIf="mostrarCursos === true">Lista de cursos aqui.</div>
+    <button (click)="onMostrarCursos()">Clique Aqui</button>
+  </article>
+  <article>
+    <h2>*ngFor</h2>
+    <ul>
+      <li *ngFor="let curso of cursos; let i = index">
+        {{ i + 1 }} - {{ curso }}
+      </li>
+    </ul>
+  </article>
+  <article>
+    <h2>*ngClass</h2>
+  </article>
+  <article>
+    <h2>*ngSwitch</h2>
+  </article>
+  <article>
+    <h2>*ngStyle</h2>
+    <button
+      [ngStyle]="{
+        backgroundColor: ativo ? 'blue' : 'gray',
+        color: ativo ? 'white' : 'black',
+        fontWeight: ativo ? 'bold' : 'normal',
+        fontSize: tamanhoFonte + 'px'
+      }"
+      (click)="mudarAtivo()"
+    >
+      Mudar atributo 'ativo'
+    </button>
+    <h5>Usando o style binding</h5>
+    <button
+      [style.backgroundColor]="ativo ? 'blue' : 'gray'"
+      [style.color]="ativo ? 'white' : 'black'"
+      [style.fontWeight]="ativo ? 'bold' : 'normal'"
+      [style.fontSize]="tamanhoFonte + 'px'"
+      (click)="mudarAtivo()"
+    >
+      Mudar atributo 'ativo'
+    </button>
+    <br />
+    <input type="text" [(ngModel)]="tamanhoFonte" />
+  </article>
 </section>
