@@ -19,6 +19,8 @@ import { CycleComponent } from './components/cycle/cycle.component';
 import { InputDataComponent } from './components/input-data/input-data.component';
 import { LibrariesComponent } from './components/libraries/libraries.component';
 import { DiretivesComponent } from './components/diretives/diretives.component';
+import { OperatorElvisComponent } from './components/operator-elvis/operator-elvis.component';
+import { NgContentComponent } from './components/ng-content/ng-content.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,8 @@ import { DiretivesComponent } from './components/diretives/diretives.component';
     InputDataComponent,
     LibrariesComponent,
     DiretivesComponent,
+    OperatorElvisComponent,
+    NgContentComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
